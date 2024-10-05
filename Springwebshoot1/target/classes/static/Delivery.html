@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"href="CSS/delivery.css">
+</head>
+
+<body >
+       <div class="container"  >
+    <h1>Customer Management</h1>
+    <div id="customerForm"  >
+        <input type="hidden" id="customerId" />
+        <input type="text" id="nameInput" placeholder="Enter Name..."><br>
+        <input type="email" id="emailInput" placeholder="Enter Email..."><br>
+        <input type="text" id="numberInput" placeholder="Enter Mobile Details..." required><br> 
+        <input type="text" id="foodName" placeholder="Food Name..." readonly><br>
+        <input type="text" id="foodPrice" placeholder="Food Price..." readonly><br>
+        <textarea id="addressInput" placeholder="Enter Address..."></textarea><br>
+        <input type="text" id="locationInput" placeholder="Enter the location..."><br>
+        <input type="text" id="pincodeInput" placeholder="Enter the pincode..."><br>
+        
+        <button id="createCustomerBtn">Create Customer</button>
+    </div>
+
+    <div id="customersContainer">
+        <h2>Customers</h2>
+        <div id="customersTableContainer"></div>
+    </div>
+</div>
+
+         
+<script src="JavaScript/delivery.js"></script>
+
+</body>
+</html>
