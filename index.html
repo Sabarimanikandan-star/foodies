@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FOOD WEBSITE</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="CSS/Butt.css">
+</head>
+<body>
+<div class="container">
+ <nav>
+  <div class="logo">
+   <h1>Foodies</h1> 
+  </div>
+  <ul>
+    <a href="">Home</a>
+                <a id="foods" href="#food">Foods</a>
+                <a id="dishs" href="#dish">Best Dishes</a>
+                <a id="orders" href="#order">Track Order</a>
+                <button id="logBtn">Sign In</button>
+
+  </ul>
+ </nav>
+ <!--login--> 
+ <div class="loginPage">
+  <input type="text" placeholder="Enter Email" id="name">
+  <input type="password" placeholder="Enter password" id="pass">
+      <button id="logedBtn">Log In</button>
+ </div>
+ 
+  <!--main-->
+ <div class="main">
+  <div class="mainText">
+    <img src="Images/mainimg.jpg"alt="" width="1340px">
+   <h1>Healthy Food for Wealthy<br>Mood</h1>
+   <h2>Upto 20% OFF</h2>
+   
+    <button>Order Now</button>
+  </div>
+  
+ </div>
+ 
+ <!--cards-->
+<div class="foodcard" id="food">
+  <div class="head">
+  <h1>Our<span>Foods</span></h1>
+  </div>
+
+  <div class="card">
+    <div class="crd">
+  <img src="Images/img1.1.jpg" alt="">
+  <div class="foodText">
+  <h2 id="food-name1">Biryani</h2>
+  <ul class="nav">
+   <li><i class="fa-solid fa-star"></i></li> 
+   <li><i class="fa-solid fa-star"></i></li> 
+   <li><i class="fa-solid fa-star"></i></li> 
+  </ul>
+              <p id="price">Price: <span id="food-price1">200</span></p>
+            <button onclick="submitOrder1()">Order Now</button>
+  
+  
+  </div>
+</div>
+
+<div class="crd">
+  <img src="Images/dessert.jpg" alt="">
+  <div class="foodText">
+    <h2 id="food-name2">Dessert</h2>
+    <ul class="nav">
+      <li><i class="fa-solid fa-star"></i></li> 
+      <li><i class="fa-solid fa-star"></i></li> 
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+     </ul>
+    
+    <p id="price">Price:<span id="food-price2">300</span></p>
+    <button onclick="submitOrder2()">Order Now</button>
+</div>
+</div>
+
+<div class="crd">
+  <img src="Images/img3.jpg" alt="">
+  <div class="foodText">
+    <h2 id="food-name3">Pizza</h2>
+    <ul class="nav">
+      <li><i class="fa-solid fa-star"></i></li> 
+      <li><i class="fa-solid fa-star"></i></li> 
+      <li><i class="fa-solid fa-star"></i></li>
+     </ul>
+     
+    <p id="price">Price:<span id="food-price3">199</span></p> 
+    <button onclick="submitOrder3()">Order Now</button>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="card" id="card2">
+<div class="crd">
+  <img src="Images/img4.jpg" alt="">
+  <div class="foodText">
+    <h2 id="food-name4">Samosa</h2>
+    <ul class="nav">
+      <li><i class="fa-solid fa-star"></i></li> 
+      <li><i class="fa-solid fa-star"></i></li> 
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+     </ul>
+    
+      <p id="price">Price:<span id="food-price4">20</span></p>
+   <button onclick="submitOrder4()">Order Now</button>
+</div>
+</div>
+<div class="crd">
+  <img src="Images/img5.jpg" alt="">
+  <div class="foodText">
+    <h2 id="food-name5">Burger</h2>
+    <ul class="nav">
+      <li><i class="fa-solid fa-star"></i></li> 
+      <li><i class="fa-solid fa-star"></i></li> 
+      <li><i class="fa-solid fa-star"></i></li>
+     </ul>
+    
+      <p id="price">Price:<span id="food-price5">140</span></p>
+    <button onclick="submitOrder5()">Order Now</button>
+</div>
+</div>
+<div class="crd">
+ <img src="Images/img6.jpg" alt="">
+  <div class="foodText">
+    <h2 id="food-name6">French Fries</h2>
+    <ul class="nav">
+      <li><i class="fa-solid fa-star"></i></li> 
+      <li><i class="fa-solid fa-star"></i></li> 
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+      <li><i class="fa-solid fa-star"></i></li>
+     </ul>
+    
+    <p id="price">Price:<span id="food-price6">120</span></p>
+    <button onclick="submitOrder6()">Order Now</button>
+  </div>
+</div>
+</div>
+ </div>
+ <!--dish-->
+ <div class="dish" id="dish">
+  <div class="head">
+  <h1>Our Best<span>Dishe's</span></h1>
+  </div>
+  <div class="best">
+  <img src="Images/mainimg.jpg" alt="">
+  <div class="bestText">
+  <h2>Best Dishes Ever</h2>
+  <img src="Images/r2.jpg" alt="">
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, obcaecati laborum.</p>
+  <a href="https://www.chefspencil.com/best-30-food-blogs-in-2020/">Explore Foods</a>
+  </div>
+  </div>
+  
+<div class="best">
+<img src="Images/img3.jpg" alt="">
+<div class="bestText">
+  <h2>Best Dishes Ever</h2>
+  <img src="Images/r2.jpg" alt="">
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, obcaecati laborum.</p>
+  <a href="https://www.chefspencil.com/best-30-food-blogs-in-2020/">Explore Foods</a>
+</div>
+</div>
+ </div>
+ <!--orderTrack-->
+<div class="track" id="order">
+<div class="head">
+  <h1>Track<span>Order</span></h1>
+</div>
+<div class="order">
+ <div class="orderText">
+  <i class="fa-solid fa-person-biking"></i>
+  <h2>Track Order Here</h2>
+  <button id="trackBtn">Track Now</button>
+ </div> 
+<img src="Images/map.webp" alt="">
+</div>
+</div>
+<!--Tracking-->
+<div class="tracking">
+  <div class="trackTest">
+   <h1>Live Order Tracking</h1> 
+   <h2>Fast Delivery</h2>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+    Corporis quibusdam possimus, labore incidunt temporibus, <br>
+     eius totam libero, sint quas corrupti soluta! Veniam <br>
+      asperiores ex consequatur sequi repellat voluptatibus facere unde?</p>
+  </div>
+  <img src="Images/tracking.png">
+</div>
+
+<!--footer-->
+<div class="footer">
+<div class="text">
+<h2>About Us</h2>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing <br>
+  elit. Quos nihil aliquam fuga ex obcaecati rerum <br>
+  in sunt ducimus dolorum, officiis odit atque!</p>
+</div>
+<div class="text">
+  <h2>Our Foods</h2>
+  <p>Fresh Foods</p>
+  <p>Price</p>
+  <p>Service</p>
+  <p>Quality</p>
+</div>
+<div class="text">
+<h2>Customer</h2>
+<p>Relation</p>
+<p>Affordable</p>
+<p>Best Price</p>
+<p>More</p>
+</div>
+<div class="text">
+ <h2>Contact Us</h2>
+ <p>A-33 Block</p>
+ <p>kudlu Gate</p>
+ <p>Service Road</p>
+ <p>9843976327</p> 
+</div>
+<div class="text1">
+ <h2>Social Media</h2> 
+ <p><i class="fa-brands fa-square-instagram"></i>Instagram</p>
+ <p><i class="fa-brands fa-facebook"></i>Facebook</p>
+ <p><i class="fa-brands fa-square-twitter"></i>Twitter</p>
+ <p><i class="fa-brands fa-youtube"></i>YouTube</p>
+</div>
+</div>
+<script src="JavaScript/food.js"></script>
+ 
+
+</body>
+</html>
